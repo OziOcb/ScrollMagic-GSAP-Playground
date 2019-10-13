@@ -2,14 +2,17 @@
 	position: relative;
 	border-radius: 50%;
 	overflow: hidden;
-	transition: transform .3s;
+	transition: transform $baseTransitionDuration,
+							box-shadow $baseTransitionDuration;
 	&:hover {
-		box-shadow: 0 0 15px rgba(#fff, .5);
+		box-shadow: $shadowHover;
 		transform: scale(1.1);
 	}
 
 	&__img {
-		transition: filter .3s;
+		height: 100%;
+		width: 100%;
+		transition: filter $baseTransitionDuration;
 		border-radius: 50%;
 		:hover > & 	{
 			filter: blur(2px) invert(75%);
@@ -17,19 +20,17 @@
 	}
 
 	&__titleWrapper {
+		@include displayFlex();
 		opacity: 0;
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		border-radius: 50%;
 		color: #111;
 		background-color: #fff;
-		transition: opacity .3s;
+		transition: opacity $baseTransitionDuration;
 		:hover > & {
 			opacity: .6;
 		}
@@ -38,7 +39,8 @@
 	&__title {
 		opacity: 0;
 		transform: translateY(100%);
-		transition: transform .3s .2s, opacity .3s .2s;
+		transition: transform $baseTransitionDuration $baseTransitionDurationDelay33,
+								opacity $baseTransitionDuration $baseTransitionDurationDelay33;
 		:hover > & {
 			opacity: 1;
 			transform: translateX(0%);

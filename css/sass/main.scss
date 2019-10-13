@@ -1,5 +1,8 @@
 @import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
 @import 'base/base';
+@import 'base/helperClasses';
 
 // Components
 @import 'components/avatar';
@@ -8,11 +11,3 @@
 @import 'sections/hero';
 @import 'sections/dummy';
 @import 'sections/footer';
-
-body {
-    background-color: #111;
-    color: #eee;
-}
-
-
-
