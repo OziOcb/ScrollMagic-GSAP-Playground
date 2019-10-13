@@ -1,10 +1,20 @@
 .dummySection {
 	text-align: center;
 	padding: 100px 15px;
+	@media (min-width: $lg) {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
 
-	&__avatar {
-		height: 140px;
-		width: 140px;
-		margin: 0 auto;
+	&__slot {
+		margin-bottom: 100px;
+		@media (min-width: $lg) {
+			flex: 0 1 470px;
+			padding: 50px;
+			margin-bottom: 0;
+		}
 	}
 }

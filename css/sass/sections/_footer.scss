@@ -2,6 +2,10 @@
 	background-color: $colorFooter;
 	text-align: center;
 	padding: 50px 15px;
+	@media (min-width: $lg) {
+		display: flex;
+		justify-content: space-around;
+	}
 
 	&__title {
 		margin-bottom: 0;
