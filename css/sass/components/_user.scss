@@ -1,5 +1,33 @@
 .user {
-	&__avatar {
+	&__avatarSlot {
+		opacity: 0;
+		transform: scale(.8);
+		transition: transform $baseTransitionDuration,
+								opacity $baseTransitionDuration;
+
+		.show & {
+			opacity: 1;
+			transform: scale(1);
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	&__title,
+	&__sentence {
+		opacity: 0;
+		transform: translateY(50px);
+		transition: opacity $baseTransitionDuration $baseTransitionDurationDelay33,
+								transform $baseTransitionDuration $baseTransitionDurationDelay33,
+								box-shadow $baseTransitionDuration $baseTransitionDurationDelay33;
+
+		.show & {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	&__avatarSlot {
 		height: 140px;
 		width: 140px;
 		margin: 0 auto;
