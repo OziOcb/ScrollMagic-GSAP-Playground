@@ -21,13 +21,13 @@ users.forEach(user => {
 // parallax section
 const parallaxTimeLine = new TimelineMax();
 parallaxTimeLine
-	.from('.sectionParallax__content', .3, {autoAlpha: 0, ease:Power0.easeNone}, .8)
+	.from('.sectionParallax__content', .15, {autoAlpha: 0, ease:Power0.easeNone}, .5)
 	.from('.sectionParallax__bg', 2, {y: '-25%', ease:Power0.easeNone}, 0);
 
 const sectionParallaxScene = new ScrollMagic.Scene({
 	triggerElement: '.sectionParallax',
 	triggerHook: 1,
-	duration: '100%'
+	duration: '200%'
 })
 	.addIndicators({
 		name: `parallax`,
