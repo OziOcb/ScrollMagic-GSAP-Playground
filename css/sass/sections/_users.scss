@@ -1,4 +1,4 @@
-.dummySection {
+.sectionUsers {
 	text-align: center;
 	padding: 100px 15px;
 	@media (min-width: $lg) {
@@ -9,7 +9,7 @@
 		padding-bottom: 200px;
 	}
 
-	&__slot {
+	&__userSlot {
 		margin-bottom: 100px;
 		@media (min-width: $lg) {
 			flex: 0 1 470px;

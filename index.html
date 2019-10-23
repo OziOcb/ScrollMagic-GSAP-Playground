@@ -1,99 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>ScrollMagic & GSAP | OziOcb</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>ScrollMagic & GSAP | OziOcb</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<!-- Place favicon.ico in the root directory -->
 
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" href="css/main.min.css" />
+	</head>
 
-	<link rel="stylesheet" href="css/main.min.css">
-</head>
-
-<body>
-
-	<section class="hero">
-		<div class="hero__content">
-			<h1 class="hero__title">ScrollMagic &amp; GSAP</h1>
-			<p class="hero__lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, quisquam.</p>
-		</div>
-		<button class="hero__scrollBtn">scroll down</button>
-	</section>
-
-	<!-- TODO: change dummySection to sectionUsers -->
-	<section class="dummySection">
-		<div class="dummySection__slot user">
-			<div class="user__avatarSlot avatar">
-				<img class="avatar__img" src="/img/avatar1.jpg" alt="dummy image">
-				<div class="avatar__titleWrapper">
-					<div class="avatar__title">Chase Hagenes</div>
-				</div>
+	<body>
+		<section class="hero">
+			<div class="hero__content">
+				<h1 class="hero__title">ScrollMagic &amp; GSAP</h1>
+				<p class="hero__lead">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+					quisquam.
+				</p>
 			</div>
-			<h2 class="user__title">Chase Hagenes</h2>
-			<p class="user__sentence">Voluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci vero.</p>
-		</div>
+			<button class="hero__scrollBtn">scroll down</button>
+		</section>
 
-		<div class="dummySection__slot user">
-			<div class="user__avatarSlot avatar">
-				<img class="avatar__img" src="/img/avatar2.jpg" alt="dummy image">
-				<div class="avatar__titleWrapper">
-					<div class="avatar__title">Deon Dickens</div>
+		<section class="sectionUsers">
+			<div class="sectionUsers__userSlot user">
+				<div class="user__avatarSlot avatar">
+					<img class="avatar__img" src="/img/avatar1.jpg" alt="dummy image" />
+					<div class="avatar__titleWrapper">
+						<div class="avatar__title">Chase Hagenes</div>
+					</div>
 				</div>
+				<h2 class="user__title">Chase Hagenes</h2>
+				<p class="user__sentence">
+					Voluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci
+					vero.
+				</p>
 			</div>
-			<h2 class="user__title">Deon Dickens</h2>
-			<p class="user__sentence">Voluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci vero.oluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci vero.oluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci vero.</p>
-		</div>
 
-		<div class="dummySection__slot user">
-			<div class="user__avatarSlot avatar">
-				<img class="avatar__img" src="/img/avatar3.jpg" alt="dummy image">
-				<div class="avatar__titleWrapper">
-					<div class="avatar__title">John Doe</div>
+			<div class="sectionUsers__userSlot user">
+				<div class="user__avatarSlot avatar">
+					<img class="avatar__img" src="/img/avatar2.jpg" alt="dummy image" />
+					<div class="avatar__titleWrapper">
+						<div class="avatar__title">Deon Dickens</div>
+					</div>
 				</div>
+				<h2 class="user__title">Deon Dickens</h2>
+				<p class="user__sentence">
+					Voluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci
+					vero.oluptas ipsam vel consequatur iste. Ad et magnam voluptas
+					adipisci vero.oluptas ipsam vel consequatur iste. Ad et magnam
+					voluptas adipisci vero.
+				</p>
 			</div>
-			<h2 class="user__title">John Doe</h2>
-			<p class="user__sentence">Voluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci vero.</p>
-		</div>
-	</section>
 
-	<section class="sectionParallax">
-		<div class="sectionParallax__bg"></div>
-		<div class="sectionParallax__content">
-			<h2 class="sectionParallax__title">Parallax</h2>
-			<p class="sectionParallax__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam dignissimos minima, illo minus hic quod autem corporis optio ut, quidem possimus esse obcaecati, vitae quaerat dolore qui maxime ad?</p>
-		</div>
-	</section>
+			<div class="sectionUsers__userSlot user">
+				<div class="user__avatarSlot avatar">
+					<img class="avatar__img" src="/img/avatar3.jpg" alt="dummy image" />
+					<div class="avatar__titleWrapper">
+						<div class="avatar__title">John Doe</div>
+					</div>
+				</div>
+				<h2 class="user__title">John Doe</h2>
+				<p class="user__sentence">
+					Voluptas ipsam vel consequatur iste. Ad et magnam voluptas adipisci
+					vero.
+				</p>
+			</div>
+		</section>
 
-	<footer class="footer">
-		<div>
-			<h2 class="footer__title">Link list 1</h2>
-			<ul class="footer__list">
-				<li class="footer__item"><a href="#" class="footer__link">link 1</a></li>
-				<li class="footer__item"><a href="#" class="footer__link">link 2</a></li>
-				<li class="footer__item"><a href="#" class="footer__link">link 3</a></li>
-			</ul>
-		</div>
+		<section class="sectionParallax">
+			<div class="sectionParallax__bg"></div>
+			<div class="sectionParallax__content">
+				<h2 class="sectionParallax__title">Parallax</h2>
+				<p class="sectionParallax__desc">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
+					dignissimos minima, illo minus hic quod autem corporis optio ut,
+					quidem possimus esse obcaecati, vitae quaerat dolore qui maxime ad?
+				</p>
+			</div>
+		</section>
 
-		<div class="footer__column">
-			<h2 class="footer__title">Link list 2</h2>
-			<ul class="footer__list">
-				<li class="footer__item"><a href="#" class="footer__link">link 4</a></li>
-				<li class="footer__item"><a href="#" class="footer__link">link 5</a></li>
-				<li class="footer__item"><a href="#" class="footer__link">link 6</a></li>
-			</ul>
-		</div>
-	</footer>
+		<footer class="footer">
+			<div>
+				<h2 class="footer__title">Link list 1</h2>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">link 1</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">link 2</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">link 3</a>
+					</li>
+				</ul>
+			</div>
 
-	<script src="js/plugins.js"></script>
-	<script src="js/vendor/gsap/2.1.3/TweenMax.min.js"></script>
-	<script src="js/vendor/scrollMagic/ScrollMagic.min.js"></script>
-	<script src="js/vendor/scrollMagic/animation.gsap.min.js"></script>
-	<script src="js/vendor/scrollMagic/debug.addIndicators.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
+			<div class="footer__column">
+				<h2 class="footer__title">Link list 2</h2>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">link 4</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">link 5</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">link 6</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
 
+		<script src="js/plugins.js"></script>
+		<script src="js/vendor/gsap/2.1.3/TweenMax.min.js"></script>
+		<script src="js/vendor/scrollMagic/ScrollMagic.min.js"></script>
+		<script src="js/vendor/scrollMagic/animation.gsap.min.js"></script>
+		<script src="js/vendor/scrollMagic/debug.addIndicators.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
