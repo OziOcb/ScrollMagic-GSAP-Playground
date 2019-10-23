@@ -7,6 +7,6 @@
 				"savePath": "/css"
 			}
 		],
-		"autoprefix": ["> 1%", "last 2 versions"]
+		"autoprefix": ["> 25%", "last 4 versions"]
 	}
 }
