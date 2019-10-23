@@ -6,11 +6,13 @@
 @import 'base/helperClasses';
 
 // Components
+@import 'components/button';
 @import 'components/avatar';
 @import 'components/user';
 
 // Sections
 @import 'sections/hero';
+@import 'sections/curtain';
 @import 'sections/users';
 @import 'sections/parallax';
 @import 'sections/footer';

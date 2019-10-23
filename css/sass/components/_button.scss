@@ -1,0 +1,12 @@
+.btn {
+	border-radius: 5px;
+	padding: 0.5em 1.2em;
+	background-color: transparent;
+	transition: color $baseTransitionDuration,
+		border-color $baseTransitionDuration;
+
+	&:hover {
+		color: $colorPrimary;
+		border-color: $colorPrimary;
+	}
+}
