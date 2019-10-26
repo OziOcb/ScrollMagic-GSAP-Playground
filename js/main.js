@@ -1,7 +1,20 @@
 const curtainItems = document.querySelectorAll('.curtain__item');
 const curtianToggleBtn = document.querySelector('.sectionCurtain__btn');
 
-const curtainTl = new TimelineMax({ paused: true, reversed: true });
+const changeButtonText = direction => {
+	curtianToggleBtn.removeAttribute('disabled');
+	direction === 'reverse'
+		? (curtianToggleBtn.textContent = 'Click to Show Me')
+		: (curtianToggleBtn.textContent = 'Click to Hide Me..');
+};
+
+const curtainTl = new TimelineMax({
+	paused: true,
+	reversed: true,
+	onComplete: changeButtonText,
+	onReverseComplete: changeButtonText,
+	onReverseCompleteParams: ['reverse']
+});
 curtainTl
 	.staggerTo(curtainItems, 1, { y: 0 }, 0.2)
 	.staggerTo(curtainItems, 1, { filter: 'saturate(1)' }, 0.1)
@@ -18,6 +31,8 @@ curtainTl
 	);
 
 curtianToggleBtn.addEventListener('click', () => {
+	curtianToggleBtn.textContent = 'wait!';
+	curtianToggleBtn.setAttribute('disabled', true);
 	curtainTl.reversed() ? curtainTl.play() : curtainTl.reverse();
 });
 
